@@ -1,25 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component} from 'react'
+import Navbar from './Navbar';
 
-function App() {
-  return (
+class App extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+      maquinas: [
+        {
+          name: 'Luis',
+          id: '7536',
+        }, 
+        {
+          name: 'Javier',
+          id: '3644',
+        },
+        {
+          name: 'Miguel',
+          id: '4679',
+        },
+      ]
+      
+    };
+  }
+
+  render() {
+    return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      {
+        
+        this.state.maquinas.map( (maquinas) => {
+          return <h1 key = {maquinas.id}>{maquinas.name}</h1>;
+        })
+      }
+      
     </div>
   );
+  }
+  
 }
 
 export default App;
