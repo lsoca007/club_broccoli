@@ -1,47 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component} from 'react'
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
+import About from './components/About/About';
+import Blog from './components/Blog';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
-class App extends Component {
-  constructor(){
-    super();
+function App() {
 
-    this.state = {
-      maquinas: [
-        {
-          name: 'Luis',
-          id: '7536',
-        }, 
-        {
-          name: 'Javier',
-          id: '3644',
-        },
-        {
-          name: 'Miguel',
-          id: '4679',
-        },
-      ]
-      
-    };
+  let component
+
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />
+      break;
+    case "/Blog":
+      component = <Blog />
+      break;  
+    case "/about":
+      component = <About />
+      break; 
+    case "/Contact":
+      component = <Contact />
+      break;
   }
 
-  render() {
-    return (
-    
-    <div className="App">
-      <Navbar/>
-      {
-        
-        this.state.maquinas.map( (maquinas) => {
-          return <h1 key = {maquinas.id}>{maquinas.name}</h1>;
-        })
-      }
-      
-    </div>
-  );
-  }
+
+
+
+  return ( 
+  <>
+    <Navbar/>
+    {component}
+  </>
   
+  
+  )
 }
 
 export default App;
