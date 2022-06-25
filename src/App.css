@@ -73,6 +73,10 @@ body {
   padding: 0.25rem;
 }
 
+.nav li.active {
+  background-color: darkgreen;
+}
+
 .nav li:hover {
   background-color: rgb(11, 96, 6);
 }
