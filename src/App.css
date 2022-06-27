@@ -85,7 +85,9 @@ html {
 
 .column1-hero {
   display: flex;
+  height: 60vh;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 .hero-button1 {
@@ -98,7 +100,9 @@ html {
 }
 .column1-hero h1 {
   font-size: 4.2rem;
+  padding-bottom: 0.5rem;
 }
 .column1-hero p {
   font-size: 1.8rem;
+  padding-bottom: 0.5rem;
 }
