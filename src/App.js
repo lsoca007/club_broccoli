@@ -4,9 +4,9 @@ import { Component } from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About/About";
 import Blog from "./components/Blog";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import Contact from "./components/Contact";
-import BurguerMenu from "./components/Burguer Menu/burguer";
+import Burguer from "./components/Burguer Menu/burguer";
 
 function App() {
   let component;
