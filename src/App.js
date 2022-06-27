@@ -4,7 +4,7 @@ import { Component} from 'react'
 import Navbar from './components/Navbar';
 import About from './components/About/About.jsx';
 import Blog from './components/Blog/Blog';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 
 function App() {
