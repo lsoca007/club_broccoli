@@ -2,10 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { Component} from 'react'
 import Navbar from './components/Navbar';
-import About from './components/About/About';
-import Blog from './components/Blog';
+import About from './components/About/About.jsx';
+import Blog from './components/Blog/Blog';
 import Home from './components/Home';
-import Contact from './components/Contact';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
