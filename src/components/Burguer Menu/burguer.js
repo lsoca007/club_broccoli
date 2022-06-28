@@ -1,5 +1,6 @@
 import "./burguer.css";
 import hambuerguer from "./icons/icons8-menu.svg";
+import * as React from 'react';
 
 export default function BurguerMenu() {
   return (
