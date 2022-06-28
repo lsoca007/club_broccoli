@@ -1,3 +1,6 @@
+
+import "./home.css";
+
 export default function Home() {
   return (
     <div className="hero-container">
