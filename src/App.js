@@ -3,11 +3,15 @@ import "./App.css";
 import { Component } from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About/About";
-import Blog from "./components/Blog";
+import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import Burguer from "./components/Burguer Menu/burguer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import * as React from 'react';
+
+/*
 
 function App() {
   let component;
@@ -33,6 +37,25 @@ function App() {
       {component}
     </>
   );
+}
+*/
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/about" element={<About/>}></Route>
+            <Route path="/Contact" element={<Contact/>}></Route>
+            <Route path="/Blog" element={<Blog/>}></Route>
+          </Routes>
+        </div>
+      </div>
+    </Router>
+    );
 }
 
 export default App;
