@@ -7,6 +7,8 @@ import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Burguer from "./components/Burguer Menu/burguer";
+import Auth from "./components/Account/Auth.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import * as React from 'react';
@@ -51,6 +53,7 @@ function App() {
             <Route path="/about" element={<About/>}></Route>
             <Route path="/Contact" element={<Contact/>}></Route>
             <Route path="/Blog" element={<Blog/>}></Route>
+            <Route path="/Account" element={<Auth />} />
           </Routes>
         </div>
       </div>
