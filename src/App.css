@@ -49,13 +49,14 @@ html {
 }
 .site-title {
   font-size: 2.8rem !important;
+  margin-left: 1rem;
 }
 .nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .nav a {
   color: inherit;

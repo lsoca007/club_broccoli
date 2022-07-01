@@ -43,7 +43,7 @@ export default function About() {
           </Card.Body>
         </Card>
         <Card style={{ width: '25rem' }}>
-          <Card.Img variant="top" src={dimitri}/>
+          <Card.Img className = "img" variant="top" src={dimitri}/>
           <Card.Body>
             <Card.Title>Dimitri</Card.Title>
             <Card.Text>
