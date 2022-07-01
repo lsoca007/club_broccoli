@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
@@ -11,7 +11,7 @@ import Auth from "./components/Account/Auth.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import * as React from 'react';
+import React from 'react';
 
 /*
 

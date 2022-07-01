@@ -1,0 +1,36 @@
+.navbar{
+    background-color: rgb(47, 152, 11);
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.navbar a{
+    color: #fff;
+    font-family: "Mclaren";
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    height: 100%;
+
+    
+}
+
+
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+
+.site-title {
+    font-size: 2.8rem !important;
+    margin-left: 1rem;
+    font-family: "Mclaren", cursive;
+  }
+  
