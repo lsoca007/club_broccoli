@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React from 'react';
+import './navBar.css';
 
 export default function Navbar() {
     return (
-        <nav className = "nav" >
+        <nav className = "navbar" >
             <a href = "/" className = "site-title">
                 Club Broccoli
             </a>
