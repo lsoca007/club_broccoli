@@ -1,32 +1,12 @@
-.cards {
-  width: 85vw;
-  margin: 0 auto;
-  display: grid;
-
-  grid-gap: 20px;
-
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: #effef0;
-  border-radius: 5px;
-  padding: 25px;
-  cursor: pointer;
-  -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
-}
 
 p {
     color: #393e46;
     font-style: normal;
     font-family: "Noto Sans Old Permic";
     font-size: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+
   }
 
   h1 {
@@ -34,6 +14,7 @@ p {
     font-style:normal;
     font-family: "Noto Sans Old Permic";
     font:caption;
+  
   }
 
   hr {
@@ -45,3 +26,21 @@ p {
     border-width: 5px;
   
   }
+
+  .image {
+    margin-top: 2rem;
+    width: 175px;
+  
+    z-index:2;
+  
+  
+  }
+
+ .copyright {
+
+  color: rgb(123, 123, 123);
+  font-size: 1rem;
+  text-align: right;
+  margin: 4px;
+  
+ }
