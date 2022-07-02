@@ -30,11 +30,8 @@ p {
   }
 
   .image {
-    margin-top: 2rem;
-    
-    height: 25vh;
-  
-    z-index:2;
+    max-width: 100%;
+    height: auto;
   
   }
 
@@ -49,12 +46,31 @@ p {
 
  .body {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  margin-left: 30rem;
-  margin-right: 30rem;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
 }
 
 .block {
  margin-top: 4rem;
  margin-left: 2rem;
+}
+
+
+
+@media (max-width: 650px) {
+  body {
+    display: block;
+    font-size: 80%;
+  }
+  p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
 }
