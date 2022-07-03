@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import dimitri from './images/dimitri.webp';
-import * as React from 'react';
+import React from 'react';
 
 export default function About() {
     console.log("About");

@@ -6,6 +6,7 @@ import founder from './images/Adam.JPG';
 import prince from './images/prince.JPG';
 import miguelpic from './images/miguel.JPG';
 import symbol from './images/sign.png';
+import eu from './images/EU.JPG';
 
 
 export default function About() {
@@ -29,10 +30,13 @@ export default function About() {
             </div>
           
         
-            <img src={miguelpic} className = 'image' alt = "Miguel with Trump" />
+            <img src={eu} className = 'image' alt = "EU" />
             <div className='block'>
                 <h1>Conspiracy Theories</h1>
                 <p>The level of secrecy surrounding the Club Broccoli Meeting has given rise to several legends, including unproven theories that members were responsible for the European Union's founding, the war of Iraq, and the bombing of Serbia. The organisation has been accused of creating a new world government by conspiracy theorists.</p>
+            </div>
+            <img src={miguelpic} className = 'image' alt = "Miguel with Trump" />
+            <div className='block'>    
                 <p>Club Broccoli rituals are shrouded in mystery, yet they have captured the public's attention in movies and television, and they were even made fun of in an episode of &quot;The Simpsons.&quot; </p>
             </div>    
     
