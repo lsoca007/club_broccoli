@@ -11,9 +11,7 @@ export default function Home() {
           Me uno porque quiero no porque me lo digas
         </button>
       </div>
-      <div>
-        <picture></picture>
-      </div>
+   
     </div>
   );
 }
