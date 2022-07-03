@@ -2,72 +2,27 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 * {
-  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  padding: 0px;
+  box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
-.nav {
-  color: white;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  padding: 2rem;
-  background: rgb(47, 152, 11);
-  list-style-type: none;
+body {
+  background: #eee;
+  padding: 0 16px;
 }
 
-.nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-.nav a {
-  color: inherit;
-  text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0.25rem;
+footer {
+  position:fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
-.nav li.active {
-  background-color: darkgreen;
-}
-
-.nav li:hover {
-  background-color: rgb(11, 96, 6);
+footer p {
+  color: #ccc;
 }

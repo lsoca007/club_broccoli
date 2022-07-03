@@ -1,17 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Component } from "react";
 import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
-import Burguer from "./components/Burguer Menu/burguer";
 import Auth from "./components/Account/Auth.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import React from 'react';
+import Footer from "./components/Footer";
 
 /*
 
@@ -44,21 +41,27 @@ function App() {
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/about" element={<About/>}></Route>
-            <Route path="/Contact" element={<Contact/>}></Route>
-            <Route path="/Blog" element={<Blog/>}></Route>
-            <Route path="/Account" element={<Auth />} />
-          </Routes>
+    <div>
+     <Router>
+        <div className="App">
+          <Navbar />
+          <Footer/>
+          <div className="content">
+            <Routes>
+              <Route path="/" element={<Home/>}></Route>
+              <Route path="/about" element={<About/>}></Route>
+              <Route path="/Contact" element={<Contact/>}></Route>
+              <Route path="/Blog" element={<Blog/>}></Route>
+              <Route path="/Account" element={<Auth />} />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </div>
+    
+    
     );
+
 }
 
 export default App;
