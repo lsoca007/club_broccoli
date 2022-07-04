@@ -3,12 +3,13 @@ import './home.css';
 
 export default function Home() {
   return (
-    <div className="hero-container">
-      <div className="column1-hero">
-        <h1>El Club al que no te deberias unir</h1>
-        <p>Nos da igual lo que hagas con tu vida, solo unete y aporta</p>
+    <div className="home_container">
+      <div className="box_home">
+        <h1>The club you shouldn't join</h1>
+        <p>CAUTION</p>
+        <p>JOIN AT YOUR OWN RISK</p>
         <button className="hero-button1">
-          Me uno porque quiero no porque me lo digas
+          COMING SOON
         </button>
       </div>
    

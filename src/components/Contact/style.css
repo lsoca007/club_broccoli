@@ -4,9 +4,13 @@
   display: grid;
 
   grid-gap: 20px;
-
+  font-family: sans-serif;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  text-align: center;
+  padding: 25px;
+  max-width: 900px;
+  min-width: 400px;
 }
 
 /*
@@ -35,6 +39,8 @@
   height: 200px;
   box-shadow: 0 2px 5px #ccc;
   text-align: left;
+  min-width: 300px;
+  max-width: 400px;
   
 }
 
