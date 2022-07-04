@@ -11,7 +11,7 @@ export default function About() {
     return (
       <div>
 
-        <h1 className='heading_about'> In case of emergency, reach our top agents.</h1>
+        <h1 className='heading_about'> In case of emergency, reach our top agents</h1>
          <div className="cards">
         <Card
       name={contacts[0].name}
