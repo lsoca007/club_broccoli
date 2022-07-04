@@ -3,9 +3,9 @@ import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
-import Contact from "./components/Contact/Contact";
-import Auth from "./components/Account/Auth.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./components/Contact/Contact.jsx";
+import Auth from "./components/Account/Auth";
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Footer from "./components/Footer";

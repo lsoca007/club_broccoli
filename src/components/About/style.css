@@ -1,5 +1,5 @@
 
-p {
+.block p {
     color: #393e46;
     font-style: normal;
     font-family: "Noto Sans Old Permic";
@@ -10,22 +10,13 @@ p {
 
   }
 
-  h1 {
-    color: #1e212d;
+  .block h1 {
+    color: #030303;
     font-style:normal;
     font-family: "Noto Sans Old Permic";
     font:caption;
+    font-size: 2.5rem;
     
-  
-  }
-
-  hr {
-
-    width: 10%;
-    height: 0px;
-    border-style: dotted none none;
-    border-color: #f6f6f6;
-    border-width: 5px;
   
   }
 
@@ -35,16 +26,8 @@ p {
   
   }
 
- .copyright {
 
-  color: rgb(123, 123, 123);
-  font-size: 1rem;
-  text-align: right;
-  margin: 4px;
-  
- }
-
- .body {
+ .about_content {
   display: grid;
   padding: 2rem;
   grid-template-columns: 300px 1fr;
@@ -63,11 +46,11 @@ p {
 
 
 @media (max-width: 650px) {
-  .body {
+  .about_content {
     display: block;
     font-size: 80%;
   }
-  p {
+  .block p {
     position: relative;
     margin: -3rem 0 2rem 1rem;
     padding: 1rem;

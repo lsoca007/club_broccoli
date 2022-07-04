@@ -1,7 +1,5 @@
 import './style.css';
-import 'bootstrap/dist/css/bootstrap.css'
-
-import React, { Component }  from 'react';
+import React from 'react';
 import founder from './images/Adam.JPG';
 import prince from './images/prince.JPG';
 import miguelpic from './images/miguel.JPG';
@@ -15,7 +13,7 @@ export default function About() {
      <div> 
         
         
-        <div className='body'>
+        <div className='about_content'>
             <img src={founder} className = "image" alt="Andrew Green" />
             <div className='block'>
                 <h1>History</h1> 
