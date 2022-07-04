@@ -35,3 +35,9 @@
     font-weight: 600;
     color: rgb(34, 34, 34);
   }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #2C7873 !important;
+    border: #2C7873 !important;
+    
+}
