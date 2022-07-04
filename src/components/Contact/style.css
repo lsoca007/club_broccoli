@@ -9,6 +9,7 @@
   gap: 20px;
 }
 
+/*
 .card {
 
   display: flex;
@@ -22,4 +23,65 @@
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
   border-color: white;
+}
+*/
+
+.card_contact {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color: rgba(0, 0, 0, 0.052);
+  margin: 50px 0;
+  height: 200px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: left;
+  
+}
+
+
+.heading_about {
+  text-align: center;
+  font-size: 3em;
+  color: #2d3436;
+  margin: 20px 0 10px;
+}
+.top_card {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  width: 100%;
+  background-color: #2C7873;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+
+.name_card {
+  font-size: 3em;
+  color: #fefefe;
+  display: flex;
+  flex: 1;
+  margin: 10% 20px 0;
+}
+
+.card_contact img {
+  margin: 30px 20px 0 0;
+}
+
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+}
+
+.bottom {
+  margin-top: 100px;
+}
+
+.info {
+  margin: 10px 0;
+  color: #1a7e76;
 }
