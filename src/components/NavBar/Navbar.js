@@ -5,13 +5,14 @@ import logo from "./logo.PNG";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <a href="/" className="site-title">
-        <span>
-          <img className="logo_img" src={logo} alt="avatar_img" />
-        </span>{" "}
-        Club Broccoli{" "}
-      </a>
-
+      <div className="logo-container">
+        <a href="/" className="site-title">
+          <span>
+            <img className="logo_img" src={logo} alt="avatar_img" />
+          </span>{" "}
+          Club Broccoli{" "}
+        </a>
+      </div>
       <ul>
         <li>
           <a href="/Account">Account</a>

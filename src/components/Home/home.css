@@ -11,7 +11,7 @@
   color: #004445;
   font-size: 1.6rem;
   border: none;
-  background: #FFD800;
+  background: #ffd800;
 }
 .column1-hero h1 {
   font-size: 4.2rem;
@@ -22,12 +22,10 @@
   padding-bottom: 0.5rem;
 }
 
-
-
-.home_container{
+.home_container {
   width: 85vw;
   margin: 0 auto;
-  display:block;
+  display: block;
 
   grid-gap: 20px;
   font-family: sans-serif;
@@ -37,7 +35,6 @@
   padding: 25px;
   max-width: 600px;
   min-width: 300px;
-
 }
 
 .box_home {
@@ -51,6 +48,4 @@
   text-align: center;
   min-width: 300px;
   max-width: 600px;
-
 }
-

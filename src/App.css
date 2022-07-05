@@ -7,8 +7,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
+html,
+body {
   font-size: 62.5%;
+  overflow: hidden;
 }
 /*
 body {
@@ -18,7 +20,7 @@ body {
 }
 */
 footer {
-  position:fixed;
+  position: fixed;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -28,4 +30,3 @@ footer {
 footer p {
   color: #ccc;
 }
-
