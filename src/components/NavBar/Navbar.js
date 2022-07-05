@@ -1,6 +1,7 @@
 import React from 'react';
 import './navBar.css';
 import logo from './logo.PNG';
+import logo_light from './logo_light.PNG';
 
 export default function Navbar() {
     return (
@@ -10,7 +11,7 @@ export default function Navbar() {
             </a>
             <a href = "/" className="logo">
                 <img className="logo_img"
-                    src= {logo}
+                    src= {logo_light}
                     alt="avatar_img"
                     />
             </a>
