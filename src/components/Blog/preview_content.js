@@ -2,16 +2,16 @@ const content = [
     {
       id: 1,
       avatar: "https://media-exp1.licdn.com/dms/image/C5603AQHrnIwOHwDA6A/profile-displayphoto-shrink_800_800/0/1610490300728?e=1662595200&v=beta&t=ZI6Wp0HkvJVb77OoDg2sl6hDx0hgGTD5XHoRsqv0M6o",
-      name: "Miguel",
+      name: "Learn How Does Button Works inASP.NET?",
       description:
-        "“Verga chamo no pana“"
+        "“Often the need is not readily apparent to the prospect, or buried under a lot of other wants and needs.  You can probably recognize this in yourself:  Perhaps you have a project that you know you “need” to get done, but it keeps getting put off as you get distracted by life or other things that come up...“"
     },
     {
         id: 2,
         avatar: "https://production-next-images-cdn.thumbtack.com/i/434840242961842189/width/1920.webp",
-        name: "Javier",
+        name: "Raising the Stakes",
         description:
-          "“I have a side business that I run on the side.“"
+          "“Have you ever seen a movie where the character’s needs are not of the utmost urgency?  Probably not as they don’t get made.  A film about a character who is not convinced he needs to solve his or her problem immediately (or at least in the next two hours) is a film that goes nowhere.  A prospect who is not convinced that he has to solve his problem quickly, is a sale that goes nowhere.“"
     },
     {
         id: 3,
