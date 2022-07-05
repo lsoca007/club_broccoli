@@ -20,9 +20,9 @@ function createPreview (list) {
 function Blog () {
 
     return(
-        <div>
+        <div className="Blog_page">
             <h1>
-            <span>BLOG</span>
+            <span>BLOGS</span>
             </h1>
             <dl className="Blog_list">
                 {preview_content.map(createPreview)}

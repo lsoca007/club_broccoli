@@ -1,6 +1,6 @@
-h1 {
+.Blog_page h1 {
     font-weight: 900;
-    font-size: 500%;
+    font-size: 400%;
     text-align: center;
     margin-top: 4rem;
     color: #fff;
@@ -20,6 +20,10 @@ h1 {
     max-width: 90%;
   }
   
+.Blog_page{
+    margin: 3rem;
+}
+
   .Blog_list > .preview_card {
     text-align: center;
     max-width: 20rem;
