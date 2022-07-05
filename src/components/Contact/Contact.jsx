@@ -13,9 +13,6 @@ function createCard(contact) {
       img ={contact.imgURL}
       tel ={contact.phone}
       email = {contact.email}
-
-
-    
     />;
   
 }
