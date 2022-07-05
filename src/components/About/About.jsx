@@ -5,6 +5,7 @@ import prince from './images/prince.JPG';
 import miguelpic from './images/miguel.JPG';
 import symbol from './images/sign.png';
 import eu from './images/EU.JPG';
+import tree from './images/tree.jpg';
 
 
 export default function About() {
@@ -14,6 +15,7 @@ export default function About() {
         
         
         <div className='about_content'>
+            
             <img src={founder} className = "image" alt="Andrew Green" />
             <div className='block'>
                 <h1>History</h1> 
@@ -33,6 +35,7 @@ export default function About() {
                 <h1>Conspiracy Theories</h1>
                 <p>The level of secrecy surrounding the Club Broccoli Meeting has given rise to several legends, including unproven theories that members were responsible for the European Union's founding, the war of Iraq, and the bombing of Serbia. The organisation has been accused of creating a new world government by conspiracy theorists.</p>
             </div>
+
             <img src={miguelpic} className = 'image' alt = "Miguel with Trump" />
             <div className='block'>    
                 <p>Club Broccoli rituals are shrouded in mystery, yet they have captured the public's attention in movies and television, and they were even made fun of in an episode of &quot;The Simpsons.&quot; </p>
@@ -42,6 +45,18 @@ export default function About() {
             <div className='block'>
                 <h1>Broccolinist Beliefs</h1>
                 <p>Though believers in a Supreme Being or &quot;Grand Master of the Universe&quot; are encouraged by Broccolianits, the organization is not a religion.</p>
+            </div>
+
+            <img src={tree} className='image' alt="tree of life" />
+            <div className='block'>
+                <p>
+                    The presence of broccoli serves as a reminder of the tree of life. Life is a journey.
+                    Nobody is perfect in life; everyone is still learning. Share the journey with others by reaching out to them. 
+                    
+                    Life is about growth. Moving in the right direction can occasionally be difficult, but as with everything in life, 
+                    this discomfort is only momentary. You can rediscover your love for yourself with broccoli. It balances the heart chakra
+                     and makes you more open to receiving more love from other people.
+                </p>
             </div>
 
         </div>
