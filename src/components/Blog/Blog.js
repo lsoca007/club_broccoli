@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import banner from './DSC04342.jpg'
+import React from "react";
+import "./blog.css";
 
+import Card from "./Blog Posts/card";
+import Blogs from "./Blog Posts/blog_list";
 
-class Blog extends Component {
-    state = { 
-        count: 1
-     } 
-    render() { 
-        return (
-            <div>
-                <span>{this.state.count}</span>
-                <button>Create Post</button>             
-                 </div>
-        );
-    }
-    
+export default function Blog() {
+  /*console.log("Blog");*/
+  return (
+    <div className="full-section-blog-container">
+      <Card
+        title={Blogs[0].title}
+        description={Blogs[0].description}
+        author={Blogs[0].author}
+      />
+      <Card
+        title={Blogs[1].title}
+        description={Blogs[1].description}
+        author={Blogs[1].author}
+      />
+    </div>
+  );
 }
- 
-export default Blog;
