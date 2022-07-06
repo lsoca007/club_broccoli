@@ -13,7 +13,8 @@ h5,
 h6 {
   font-size: 2rem;
 }
-p {
+p,
+a {
   font-size: 1.6rem;
 }
 span {
