@@ -10,15 +10,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Footer from "./components/Footer";
 
+import { ContextHolder } from '@frontegg/rest-api';
 
+import { useAuth, useLoginWithRedirect } from "@frontegg/react";
 
 function App() {
-
+  
 
 
   return (
     <div>
-     <Router>
+     
         <div className="App">
           <Navbar />
           <Footer/>
@@ -32,7 +34,7 @@ function App() {
             </Routes>
           </div>
         </div>
-      </Router>
+      
     </div>
     
     
