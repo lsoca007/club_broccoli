@@ -10,39 +10,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Footer from "./components/Footer";
 
-/*
+import { ContextHolder } from '@frontegg/rest-api';
+
+import { useAuth, useLoginWithRedirect } from "@frontegg/react";
 
 function App() {
-  let component;
+  
 
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home />;
-      break;
-    case "/Blog":
-      component = <Blog />;
-      break;
-    case "/about":
-      component = <About />;
-      break;
-    case "/Contact":
-      component = <Contact />;
-      break;
-  }
 
-  return (
-    <>
-      <Navbar />
-      {component}
-    </>
-  );
-}
-*/
-
-function App() {
   return (
     <div>
-     <Router>
+     
         <div className="App">
           <Navbar />
           <Footer/>
@@ -56,7 +34,7 @@ function App() {
             </Routes>
           </div>
         </div>
-      </Router>
+      
     </div>
     
     

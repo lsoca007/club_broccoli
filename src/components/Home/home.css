@@ -12,7 +12,23 @@
   font-size: 1.6rem;
   border: none;
   background: #FFD800;
+  border-radius: 28px;
+  margin-top: 1rem;
+  
 }
+
+.hero-button1:hover {
+  padding: 10px 40px;
+  cursor: pointer;
+  color: #004445;
+  font-size: 1.6rem;
+  border: none;
+  background: #6FB98F;
+  border-radius: 28px;
+  margin-top: 1rem;
+}
+
+
 .column1-hero h1 {
   font-size: 4.2rem;
   padding-bottom: 0.5rem;
@@ -22,7 +38,13 @@
   padding-bottom: 0.5rem;
 }
 
-
+.user_name {
+  font-size: 2rem;
+  color: #2C7873;
+  display:block;
+  flex: 1;
+  margin: 01% 20px 0;
+}
 
 .home_container{
   width: 85vw;
@@ -46,7 +68,7 @@
   padding: 25px 15px;
   background-color: rgba(0, 0, 0, 0.052);
   margin: 50px 0;
-  height: 200px;
+  height:auto;
   box-shadow: 0 2px 5px #ccc;
   text-align: center;
   min-width: 300px;
