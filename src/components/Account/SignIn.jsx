@@ -1,13 +1,11 @@
-import React from 'react';
-import './home.css';
-import { Link } from 'react-router-dom';
+import React from "react";
 // import { useEffect } from 'react';
 import { ContextHolder } from '@frontegg/rest-api';
 import { useAuth, useLoginWithRedirect } from "@frontegg/react";
 
-function Home() {
 
-  const { user, isAuthenticated } = useAuth();
+function SignIn () {
+    const { user, isAuthenticated } = useAuth();
   const loginWithRedirect = useLoginWithRedirect();
 
   // Uncomment this to redirect to login automatically
@@ -21,23 +19,19 @@ function Home() {
     const baseUrl = ContextHolder.getContext().baseUrl;
     window.location.href = `${baseUrl}/oauth/logout?post_logout_redirect_uri=${window.location}`;
   };
-  return (
-    <div className="home_container">
-    
-          <div className="home_container">
-      
-        
-        { isAuthenticated ? (
-            <div className="box_home">
+    return(
+        <div>
+             { isAuthenticated ? (
+            <div >
               <div>
                 <img className="circle-img" src={user?.profilePictureUrl} alt={user?.name}/>
               </div>
               <div className='user_name'>
                 <span> {user?.name}</span>
               </div>
-              {/*<div>
+              <div>
                 <button onClick={() => alert(user.accessToken)}>What is my access token?</button>
-              </div>*/}
+              </div>
               <div>
                 <button className="hero-button1" onClick={() => logout()}>Logout</button>
               </div>
@@ -53,12 +47,10 @@ function Home() {
                 </div>
           )}
 
-      
-   
-  </div>
 
-    </div>
-    
-  );
+        </div>
+
+    )
 }
- export default Home;
+
+export default SignIn;
