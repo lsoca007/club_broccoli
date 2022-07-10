@@ -12,8 +12,6 @@ import { FronteggProvider } from '@frontegg/react';
 const contextOptions = {
 
   baseUrl: 'https://app-dy0ed4tp6md1.frontegg.com',
-  //baseUrl: 'https://clubbroccoli.frontegg.com',
-
   clientId: 'd3cd39ab-2377-46c2-99ff-907222d4f52a'
 
 };
