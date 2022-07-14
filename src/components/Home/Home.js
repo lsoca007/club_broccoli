@@ -31,7 +31,19 @@ function Home() {
         
         { isAuthenticated ? (
             <div>
+            
+              {/*<div className="box_home">
+                <div>
+                  <img className="circle-img" src={user?.profilePictureUrl} alt={user?.name}/>
+                </div>
+                <div className='user_name'>
+                  <span> {user?.name}</span>
+                </div>
               
+                <div>
+                  <button className="hero-button1" onClick={() => logout()}>Logout</button>
+                </div>
+              </div>*/}
 
               <div className='posts_list'>
               {posts.map(  noteItem => 
