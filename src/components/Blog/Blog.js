@@ -3,7 +3,7 @@ import './blog.css';
 import Preview from "./Entry";
 import preview_content from './preview_content';
 
-
+/*
 function createPreview (list) {
     return (
         <Preview
@@ -14,7 +14,7 @@ function createPreview (list) {
         />
     );
 }
-
+*/
 
 
 function Blog () {
@@ -25,7 +25,14 @@ function Blog () {
             <span>BLOGS</span>
             </h1>
             <dl className="Blog_list">
-                {preview_content.map(createPreview)}
+                {preview_content.map(list => (
+                    <Preview
+                        key = {list.id}
+                        avatar = {list.avatar}
+                        name = {list.name}
+                        description = {list.description} 
+                    />
+                ))}
 
             </dl>
 
