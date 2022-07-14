@@ -12,7 +12,10 @@ import { FronteggProvider } from '@frontegg/react';
 const contextOptions = {
 
   baseUrl: 'https://app-dy0ed4tp6md1.frontegg.com',
+<<<<<<< HEAD
 
+=======
+>>>>>>> abb5952a98fb8f90f810b90c5e7a717ff300c05e
   clientId: 'd3cd39ab-2377-46c2-99ff-907222d4f52a'
 
 };
