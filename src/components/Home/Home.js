@@ -1,6 +1,8 @@
 import React from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
+import Note from './Post/Post';
+import posts from './Post/posts';
 // import { useEffect } from 'react';
 import { ContextHolder } from '@frontegg/rest-api';
 import { useAuth, useLoginWithRedirect } from "@frontegg/react";
@@ -28,19 +30,21 @@ function Home() {
       
         
         { isAuthenticated ? (
-            <div className="box_home">
-              <div>
-                <img className="circle-img" src={user?.profilePictureUrl} alt={user?.name}/>
+            <div>
+              
+
+              <div className='posts_list'>
+              {posts.map(  noteItem => 
+                  <Note key = {noteItem.key}
+                        title={noteItem.title}
+                        content={noteItem.content}
+                  />
+                )}
+              
+              
               </div>
-              <div className='user_name'>
-                <span> {user?.name}</span>
-              </div>
-              {/*<div>
-                <button onClick={() => alert(user.accessToken)}>What is my access token?</button>
-              </div>*/}
-              <div>
-                <button className="hero-button1" onClick={() => logout()}>Logout</button>
-              </div>
+
+
             </div>
           ) : (
             <div className="box_home">

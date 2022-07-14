@@ -5,7 +5,7 @@ import dimitri from './images/dimitri.webp';
 import Card from './Card';
 import contacts from './contact_list';
 
-
+/*
 function createCard(contact) {
   return <Card
       key = {contact.id}
@@ -15,7 +15,7 @@ function createCard(contact) {
       email = {contact.email}
     />;
   
-}
+} */
 
 export default function About() {
     console.log("About");
