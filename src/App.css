@@ -29,3 +29,17 @@ footer p {
   color: #ccc;
 }
 
+
+.post button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  
+  color: #6c6c6c;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background-color:rgba(0, 0, 0, 0);
+}

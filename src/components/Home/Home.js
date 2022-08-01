@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import Note from './Post/Post';
 import posts from './Post/posts';
+import CreateArea from './Post/CreateArea';
 // import { useEffect } from 'react';
 import { ContextHolder } from '@frontegg/rest-api';
 import { useAuth, useLoginWithRedirect } from "@frontegg/react";
 
 function Home() {
+
+  const [notes, setNotes] = useState([]);
+
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote]; // get the previous notes and add the new note at the end
+    });
+  }
+  function deleteNote(id){
+    setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !==id;
+      })
+    })
+
+  }  
 
   const { user, isAuthenticated } = useAuth();
   const loginWithRedirect = useLoginWithRedirect();
@@ -44,12 +61,14 @@ function Home() {
                   <button className="hero-button1" onClick={() => logout()}>Logout</button>
                 </div>
               </div>*/}
-
+              <CreateArea onAdd={addNote}/>
               <div className='posts_list'>
-              {posts.map(  noteItem => 
-                  <Note key = {noteItem.key}
+              {notes.map(  (noteItem, index) => 
+                  <Note key = {index}
+                        id={index}
                         title={noteItem.title}
                         content={noteItem.content}
+                        onDelete= {deleteNote}
                   />
                 )}
               
