@@ -7,6 +7,8 @@ ___
 ![Home, Site ununder construction ](Home_pic.png)
 
 ![Blogs, example preview ](blogs_pic.png)
+
+![Login, example preview ](Login.png)
 ### Introduction
 
 
