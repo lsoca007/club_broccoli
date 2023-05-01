@@ -1,7 +1,7 @@
 # CLub Broccoli
 ##### React App
 ## Under Construction
-[You can reach the application here.](https://clubbroccoli.com/)
+[You can reach the application here.](https://rainbow-stardust-2fcdfe.netlify.app/)
 ___
 
 ![Home, Site ununder construction ](Home_pic.png)
